@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  
+  <script src="https://kit.fontawesome.com/7533f20e11.js" crossorigin="anonymous"></script>
+  <title>scheduler</title>
+</head>
+<body>
+  <nav>
+    <i class="fa-solid fa-bars"></i>
+    <div>
+      <i class="fa-solid fa-angle-left"></i>
+      <span class="currentYear"></span>
+      <i class="fa-solid fa-angle-right"></i>
+    </div>
+    <div>
+      <span>Day</span>
+      <span>Week</span>
+      <span>Month</span>
+    </div>
+  </nav>
+
+  <section id="agenda">
+    <div>
+      <span>+ add</span>
+      <span>- delete</span>
+    </div>
+    <div>
+      <div>
+        <input type="checkbox"/>
+        <span>personal</span>
+      </div>
+      <div>
+        <input type="checkbox"/>
+        <span>public</span>
+      </div>
+      <div>
+        <input type="checkbox"/>
+        <span>celebration</span>
+      </div>
+      <div>
+        <input type="checkbox"/>
+        <span>기타</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="calender">
+    <div class="test"></div>
+    <tr>
+      <td>SUN</td>
+      <td>MON</td>
+      <td>TUE</td>
+      <td>WED</td>
+      <td>THU</td>
+      <td>FRI</td>
+      <td>SAT</td>
+    </tr>
+
+  </section>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
