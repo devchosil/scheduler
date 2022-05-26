@@ -10,13 +10,16 @@
   <title>scheduler</title>
 </head>
 <body>
+  <!-- 상단바 -->
   <nav>
-    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-bars" onclick="clickMenu()"></i>
+
     <div>
-      <i class="fa-solid fa-angle-left"></i>
-      <span class="currentYear"></span>
-      <i class="fa-solid fa-angle-right"></i>
+      <button onclick="prevMonth()"><i class="fa-solid fa-angle-left"></i></button>
+      <button onclick="goToday()"><span class="currentYear"></span></button>
+      <button onclick="nextMonth()"><i class="fa-solid fa-angle-right"></i></button>
     </div>
+
     <div>
       <span>Day</span>
       <span>Week</span>
@@ -24,12 +27,14 @@
     </div>
   </nav>
 
-  <section id="agenda">
-    <div>
-      <span>+ add</span>
-      <span>- delete</span>
-    </div>
-    <div>
+  <!-- 일정 관련 -->
+  <section>
+    <div id="agenda" class="hidden">
+      <div class="addDel">
+        <span>+ add</span>
+        <span>- delete</span>
+      </div>
+    <div class="checkBox">
       <div>
         <input type="checkbox"/>
         <span>personal</span>
@@ -47,21 +52,24 @@
         <span>기타</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="calender">
-    <div class="test"></div>
-    <tr>
-      <td>SUN</td>
-      <td>MON</td>
-      <td>TUE</td>
-      <td>WED</td>
-      <td>THU</td>
-      <td>FRI</td>
-      <td>SAT</td>
-    </tr>
+  <!-- 달력 -->
+  <div id="calendar">
+    
+    <div class="days">
+      <div class="day">SUN</div>
+      <div class="day">MON</div>
+      <div class="day">TUE</div>
+      <div class="day">WED</div>
+      <div class="day">THU</div>
+      <div class="day">FRI</div>
+      <div class="day">SAT</div>
+    </div>
 
-  </section>
+    <div class="dates"></div>
+  </div>
+</section>
 
   <script src="src/index.js"></script>
 </body>
